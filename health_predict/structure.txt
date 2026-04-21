@@ -1,0 +1,232 @@
+Folder PATH listing
+Volume serial number is E8CB-E9B1
+E:.
+¦   plan.txt
+¦   structure.txt
+¦   
++---health_predict
+    +---hacksprint-ps5-backend-main
+    ¦   +---hacksprint-ps5-backend-main
+    ¦       ¦   .env.example
+    ¦       ¦   .gitignore
+    ¦       ¦   architecture.png
+    ¦       ¦   package-lock.json
+    ¦       ¦   package.json
+    ¦       ¦   README.md
+    ¦       ¦   server.js
+    ¦       ¦   
+    ¦       +---aiServices
+    ¦       ¦       predictionService.js
+    ¦       ¦       
+    ¦       +---authServices
+    ¦       ¦       authService.js
+    ¦       ¦       clearTokenCookie.js
+    ¦       ¦       setTokenCookie.js
+    ¦       ¦       
+    ¦       +---cloudServices
+    ¦       ¦       hospitalSearch.js
+    ¦       ¦       textractService.js
+    ¦       ¦       upload.js
+    ¦       ¦       
+    ¦       +---config
+    ¦       ¦   +---awsConfig
+    ¦       ¦   ¦       awsConfig.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---googleMapsConfig
+    ¦       ¦   ¦       googleMapsConfig.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---nodemailerConfig
+    ¦       ¦   ¦       nodemailerConfig.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---postgresConfig
+    ¦       ¦           postgres.js
+    ¦       ¦           
+    ¦       +---controller
+    ¦       ¦   +---adminController
+    ¦       ¦   ¦       adminController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---bookingController
+    ¦       ¦   ¦       bookingController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---chatController
+    ¦       ¦   ¦       chatController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---contactController
+    ¦       ¦   ¦       contactController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---doctorController
+    ¦       ¦   ¦       doctorController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---hospitalController
+    ¦       ¦   ¦       hospitalController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---patientController
+    ¦       ¦   ¦       patientController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---recommendationController
+    ¦       ¦   ¦       gemniController.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---reportController
+    ¦       ¦           reportController.js
+    ¦       ¦           
+    ¦       +---dbConnection
+    ¦       ¦       dbConfig.js
+    ¦       ¦       dbSync.js
+    ¦       ¦       
+    ¦       +---emailService
+    ¦       ¦       bookingEmailService.js
+    ¦       ¦       emailService.js
+    ¦       ¦       
+    ¦       +---middleware
+    ¦       ¦       authMiddleware.js
+    ¦       ¦       optionalMiddleware.js
+    ¦       ¦       roleMiddleware.js
+    ¦       ¦       
+    ¦       +---model
+    ¦       ¦   ¦   index.js
+    ¦       ¦   ¦   
+    ¦       ¦   +---adminModel
+    ¦       ¦   ¦       admin.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---analyticsModel
+    ¦       ¦   ¦       analytics.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---assesmentModel
+    ¦       ¦   ¦       assessment.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---associationModel
+    ¦       ¦   ¦       association.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---chatModel
+    ¦       ¦   ¦       chatMessage.js
+    ¦       ¦   ¦       chatSession.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---contactModel
+    ¦       ¦   ¦       contact.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---doctorModel
+    ¦       ¦   ¦       doctor.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---patientModel
+    ¦       ¦   ¦       patient.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---recommendationModel
+    ¦       ¦   ¦       recommendation.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---reportModel
+    ¦       ¦   ¦       report.js
+    ¦       ¦   ¦       
+    ¦       ¦   +---scheduleBooking
+    ¦       ¦           booking.js
+    ¦       ¦           
+    ¦       +---route
+    ¦           +---adminRoute
+    ¦           ¦       adminRoute.js
+    ¦           ¦       
+    ¦           +---bookingRoute
+    ¦           ¦       bookingRoute.js
+    ¦           ¦       
+    ¦           +---chatRoute
+    ¦           ¦       chatRoute.js
+    ¦           ¦       
+    ¦           +---contactRoute
+    ¦           ¦       contactRoute.js
+    ¦           ¦       
+    ¦           +---doctorRoute
+    ¦           ¦       doctorRoute.js
+    ¦           ¦       
+    ¦           +---hospitalRoute
+    ¦           ¦       hospitalRoute.js
+    ¦           ¦       
+    ¦           +---patientRoute
+    ¦           ¦       patientRoute.js
+    ¦           ¦       
+    ¦           +---recommendationRoute
+    ¦           ¦       gemniRoute.js
+    ¦           ¦       
+    ¦           +---reportRoute
+    ¦                   reportRoute.js
+    ¦                   
+    +---hack_sprint_frontend-main
+        +---hack_sprint_frontend-main
+            ¦   .gitignore
+            ¦   eslint.config.js
+            ¦   index.html
+            ¦   package-lock.json
+            ¦   package.json
+            ¦   README.md
+            ¦   vite.config.js
+            ¦   
+            +---src
+                ¦   App.css
+                ¦   App.jsx
+                ¦   index.css
+                ¦   main.jsx
+                ¦   
+                +---components
+                ¦   ¦   Chatbot.jsx
+                ¦   ¦   FloatingChatButton.jsx
+                ¦   ¦   Footer.jsx
+                ¦   ¦   Navbar.jsx
+                ¦   ¦   ProfileHolder.jsx
+                ¦   ¦   ProtectedRoute.jsx
+                ¦   ¦   
+                ¦   +---bookings
+                ¦   ¦       DoctorBookings.jsx
+                ¦   ¦       PatientBookings.jsx
+                ¦   ¦       
+                ¦   +---reports
+                ¦   ¦       DoctorPatients.jsx
+                ¦   ¦       PatientReports.jsx
+                ¦   ¦       
+                ¦   +---ui
+                ¦           MapCard.jsx
+                ¦           Notification.jsx
+                ¦           NotificationContainer.jsx
+                ¦           UploadProgressModal.jsx
+                ¦           
+                +---context
+                ¦       AuthContext.jsx
+                ¦       
+                +---fonts
+                ¦       Nunito-Black.ttf
+                ¦       Nunito-Bold.ttf
+                ¦       Nunito-Italic.ttf
+                ¦       Nunito-Light.ttf
+                ¦       Nunito-Regular.ttf
+                ¦       Nunito-SemiBold.ttf
+                ¦       
+                +---hooks
+                ¦       useAuthForm.js
+                ¦       useNotification.js
+                ¦       useResponsive.js
+                ¦       
+                +---pages
+                ¦   ¦   AboutPage.jsx
+                ¦   ¦   ContactPage.jsx
+                ¦   ¦   EmergencyPage.jsx
+                ¦   ¦   HomePage.jsx
+                ¦   ¦   ScheduleConsultationPage.jsx
+                ¦   ¦   
+                ¦   +---auth
+                ¦   ¦       LoginPage.jsx
+                ¦   ¦       SignupPage.jsx
+                ¦   ¦       
+                ¦   +---dashboard
+                ¦           DoctorDashboard.jsx
+                ¦           DoctorProfile.jsx
+                ¦           PatientDashboard.jsx
+                ¦           PatientProfile.jsx
+                ¦           
+                +---utils
+                        api.js
+                        authService.js
+                        backendAnalysis.js
+                        bookingService.js
+                        chatService.js
+                        contactService.js
+                        doctorService.js
+                        hospitalService.js
+                        patientService.js
+                        reportService.js
+                        

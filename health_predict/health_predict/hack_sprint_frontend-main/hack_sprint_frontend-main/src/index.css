@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+/* Healthcare Color Palette & Global Styles */
+:root {
+  --primary-pink: #ec4899;
+  --secondary-pink: #f472b6;
+  --light-pink: #fbcfe8;
+  --primary-green: #22c55e;
+  --secondary-green: #4ade80;
+  --light-green: #bbf7d0;
+  --primary-blue: #3b82f6;
+  --secondary-blue: #60a5fa;
+  --light-blue: #bfdbfe;
+  --neutral-gray: #6b7280;
+  --light-gray: #f8fafc;
+  --white: #ffffff;
+  --dark-gray: #1f2937;
+}
+
+
+
+@theme {
+    --font-lato: 'Lato', sans-serif;
+}
+
+/* Custom Healthcare Solid Backgrounds */
+.bg-healthcare-primary {
+  background: var(--primary-pink);
+}
+
+.bg-healthcare-secondary {
+  background: var(--primary-green);
+}
+
+.bg-healthcare-accent {
+  background: var(--primary-blue);
+}
+
+.bg-healthcare-light {
+  background: var(--light-gray);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-pink);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-pink);
+}
+
+/* Focus States for Accessibility */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-pink);
+  outline-offset: 2px;
+}
+
+/* Healthcare Button Animations */
+.healthcare-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0);
+}
+
+.healthcare-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+}
+
+.healthcare-button:active {
+  transform: translateY(0px);
+}
+
+/* Healthcare Card Hover Effects */
+.healthcare-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateZ(0);
+}
+
+.healthcare-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Medical Icon Animations */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.heartbeat-animation {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+/* Loading Spinner for Medical Reports */
+@keyframes spin-medical {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin-medical {
+  animation: spin-medical 1s linear infinite;
+}
+
+/* Risk Level Indicators */
+.risk-high {
+  background: #fecaca;
+  border-color: #f87171;
+  color: #dc2626;
+}
+
+.risk-medium {
+  background: #fed7aa;
+  border-color: #fb923c;
+  color: #ea580c;
+}
+
+.risk-low {
+  background: var(--light-green);
+  border-color: var(--secondary-green);
+  color: var(--primary-green);
+}
+
+/* Upload Drag and Drop Styling */
+.upload-area {
+  transition: all 0.3s ease;
+  border: 2px dashed #cbd5e1;
+}
+
+.upload-area:hover,
+.upload-area.drag-over {
+  border-color: var(--primary-pink);
+  background: var(--light-pink);
+}
+
+/* Healthcare Form Styling */
+.healthcare-input {
+  transition: all 0.3s ease;
+  border: 2px solid #e2e8f0;
+}
+
+.healthcare-input:focus {
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+
+/* Medical Report Status Badges */
+.status-analyzing {
+  background: var(--light-blue);
+  color: var(--primary-blue);
+  animation: pulse 2s infinite;
+}
+
+.status-complete {
+  background: var(--light-green);
+  color: var(--primary-green);
+}
+
+.status-error {
+  background: #fecaca;
+  color: #dc2626;
+}
+
+/* Healthcare Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark-gray);
+}
+
+.healthcare-text {
+  color: var(--neutral-gray);
+  line-height: 1.6;
+}
+
+/* Modal and Overlay Animations */
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Healthcare Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Medical Chart Colors */
+.chart-cardiology { color: #ef4444; }
+.chart-neurology { color: #8b5cf6; }
+.chart-ophthalmology { color: #06b6d4; }
+.chart-pulmonology { color: #10b981; }
+
+/* Responsive Healthcare Layout */
+@media (max-width: 768px) {
+  .healthcare-card {
+    margin: 0.5rem 0;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles for Medical Reports */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .healthcare-card {
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+/* Healthcare Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .healthcare-card {
+    border: 2px solid currentColor;
+  }
+  
+  button {
+    border: 2px solid currentColor;
+  }
+}

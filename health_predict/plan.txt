@@ -1,0 +1,42 @@
+health_predict/
+│
+├── backend/                     # Express + Node.js server
+│   ├── server.js                # Entry point (starts Express app)
+│   ├── config/                  # Config files (DB, environment)
+│   │   └── db.js                # Database connection (MongoDB / Sequelize)
+│   ├── models/                  # Database models
+│   │   ├── Booking.js           # Appointment booking schema
+│   │   ├── User.js              # User schema (patients/doctors)
+│   │   └── Prediction.js        # Store prediction results
+│   ├── routes/                  # API routes
+│   │   ├── bookingRoutes.js     # Endpoints for booking appointments
+│   │   ├── predictionRoutes.js  # Endpoints for health anomaly prediction
+│   │   └── ambulanceRoutes.js   # (future) ambulance finder
+│   ├── controllers/             # Business logic
+│   │   ├── bookingController.js
+│   │   ├── predictionController.js
+│   │   └── ambulanceController.js
+│   ├── services/                # External integrations
+│   │   └── aiService.js         # Calls ML API (axios.post)
+│   └── package.json             # Backend dependencies
+│
+├── frontend/                    # React + Vite + Tailwind
+│   ├── vite.config.js           # Vite config with React + Tailwind plugins
+│   ├── src/
+│   │   ├── App.jsx              # Main React app
+│   │   ├── pages/
+│   │   │   ├── BookingPage.jsx  # Form + list of bookings
+│   │   │   ├── PredictionPage.jsx # Form to enter health data + show result
+│   │   │   └── AmbulancePage.jsx # (future) ambulance finder UI
+│   │   ├── components/
+│   │   │   ├── BookingForm.jsx
+│   │   │   ├── PredictionForm.jsx
+│   │   │   └── Navbar.jsx
+│   │   └── styles/              # Tailwind + custom CSS
+│   └── package.json             # Frontend dependencies
+│
+├── docs/                        # Documentation for submission
+│   ├── architecture-diagram.png # Diagram showing modular design
+│   └── report.md                # Notes on future modules
+│
+└── README.md                    # Project overview
